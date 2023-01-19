@@ -1,0 +1,157 @@
+<%- include("header") %>
+    <main id="dbclick">
+      <div class="Page">
+        <h1><b>All time Music</b></h1>
+      </div>
+      <div class="row" id="dbclick"   style="margin-left: 20%;"  > 
+        <div class="column2" style="width: 300px;">
+        
+        <img src="/img/<%=music[0].img%>"  style="height:270px"  name="music"><br><form action="/saved/<%=music[0]._id%>" method="post">
+          <button type="submit"  style=" border-style:none; border-radius: 50px;background-color:transparent;"  name="button" onclick="myFunction()"> <p><b><%=music[0].title%> - <%=music[0].content%> </b><big><big><i class='bx bxs-heart' style='color:#ff2c2c' ></i></big></big></p></button>
+         </form>
+          <audio id="audio0" src="<%=music[0].video%>"></audio>
+          <button class="btn" id="btn1" type="button" onclick="play0()">►</button>                  
+     
+    
+</div>
+                                               
+
+          <div class="column2" style="width: 300px;" > <img src="/img/<%=music[1].img%>"  style="height:270px" value="PLAY"   >  <form action="/saved/<%=music[1]._id%>" method="post">
+           <button type="submit"  style=" border-style:none; border-radius: 50px;background-color:transparent;"  name="button" onclick="myFunction()"> <p><b>Newton - Shimayla</b><big><big><i class='bx bxs-heart' style='color:#ff2c2c' ></i></big></big></p></button>
+          </form>
+            <audio id="audio1" src="<%=music[1].video%>" ></audio>
+            <button class="btn" id="btn1"  onclick="play1()">►</button>  
+              
+            </div>
+       
+            <div class="column2" style="width: 300px;"> <img src="/img/<%=music[2].img%>"  style="height:270px" value="PLAY"  ><form action="/saved/<%=music[2]._id%>" method="post">
+              <button type="submit"  style=" border-style:none; border-radius: 50px;background-color:transparent;"  name="button" onclick="myFunction()"> <p><b>Moldanazar - Bari de Oay</b><big><big><i class='bx bxs-heart' style='color:#ff2c2c' ></i></big></big></p></button>
+             </form>
+              <audio id="audio2" src="<%=music[2].video%>" ></audio>
+              <button class="btn" id="btn1"  onclick="play2()">►</button> 
+                
+           </div>
+          
+            <div class="column2"> <img src="/img/<%=music[3].img%>"  style="height:270px" value="PLAY"  ><form action="/saved/<%=music[3]._id%>" method="post">
+              <button type="submit"  style=" border-style:none; border-radius: 50px;background-color:transparent;"  name="button" onclick="myFunction()"> <p><b><%=music[3].title%> - <%=music[3].content%></b><big><big><i class='bx bxs-heart' style='color:#ff2c2c' ></i></big></big></p></button>
+             </form>
+              <audio id="audio3" src="<%=music[3].video%>" ></audio>
+              <button class="btn" id="btn1"  onclick="play3()">►</button> 
+               
+           </div>
+           
+        </div>
+        <div class="row" id="dbclick" style="margin-left: 17%;width: auto; "  >
+          
+            <div class="column2" style="width: 300px;"> <img src="/img/<%=music[4].img%>"  style="height:270px" value="PLAY"  ><form action="/saved/<%=music[4]._id%>" method="post">
+              <button type="submit"  style=" border-style:none; border-radius: 50px;background-color:transparent;"  name="button" onclick="myFunction()"> <p><b><%=music[4].title%> - <%=music[4].content%></b><big><big><i class='bx bxs-heart' style='color:#ff2c2c' ></i></big></big></p></button>
+             </form>
+              <audio id="audio4" src="<%=music[4].video%>" ></audio>
+              <button class="btn" id="btn1"  onclick="play4()">►</button> 
+             
+           </div>
+
+          
+            <div class="column2" style="width: 300px;"> <img src="/img/<%=music[5].img%>"  style="height:270px" value="PLAY"  ><form action="/saved/<%=music[5]._id%>" method="post">
+              <button type="submit"  style=" border-style:none; border-radius: 50px;background-color:transparent;"  name="button" onclick="myFunction()"> <p><b><%=music[5].title%> - <%=music[5].content%></b><big><big><i class='bx bxs-heart' style='color:#ff2c2c' ></i></big></big></p></button>
+             </form>
+              <audio id="audio5" src="<%=music[5].video%>" ></audio>
+              <button class="btn" id="btn1"  onclick="play5()">►</button> 
+             
+        </div>
+          
+            <div class="column2" style="width: 300px;"> <img src="/img/<%=music[6].img%>"  style="height:270px" value="PLAY"  ><form action="/saved/<%=music[6]._id%>" method="post">
+              <button type="submit"  style=" border-style:none; border-radius: 50px;background-color:transparent;"  name="button" onclick="myFunction()"> <p><b><%=music[6].title%> - <%=music[6].content%></b><big><big><i class='bx bxs-heart' style='color:#ff2c2c' ></i></big></big></p></button>
+             </form>
+              <audio id="audio6" src="<%=music[6].video%>" ></audio>
+              <button class="btn" id="btn1"  onclick="play6()">►</button> 
+              </div>
+          
+            <div class="column2"style="width: 300px;"> <img src="/img/<%=music[7].img%>"  style="height:270px" value="PLAY"  ><form action="/saved/<%=music[7]._id%>" method="post">
+              <button type="submit"  style=" border-style:none; border-radius: 50px;background-color:transparent;"  name="button" onclick="myFunction()"> <p><b><%=music[7].title%> - <%=music[7].content%></b><big><big><i class='bx bxs-heart' style='color:#ff2c2c'></i></big></big></p></button>
+             </form>
+              <audio id="audio7" src="<%=music[7].video%>" ></audio>
+              <button class="btn" id="btn1"  onclick="play7()">►</button> 
+              
+          </div>
+           </div>
+        
+           <div class="row" id="dbclick" style="margin-left: 17%; "  >
+            
+              <div class="column2" style="width: 300px;"> <img src="/img/<%=music[8].img%>"  style="height:270px" value="PLAY"  ><form action="/saved/<%=music[8]._id%>" method="post">
+                <button type="submit"  style=" border-style:none; border-radius: 50px;background-color:transparent;"  name="button" onclick="myFunction()"> <p><b><%=music[8].title%> - <%=music[8].content%></b><big><big><i class='bx bxs-heart' style='color:#ff2c2c'></i></big></big></p></button>
+               </form>
+                <audio id="audio8" src="<%=music[8].video%>" ></audio>
+                <button class="btn" id="btn1"  onclick="play8()">►</button> 
+                
+              </div>
+            
+            
+              <div class="column2" style="width: 300px;"> <img src="/img/<%=music[9].img%>"  style="height:270px" value="PLAY"  ><form action="/saved/<%=music[9]._id%>" method="post">
+                <button type="submit"  style=" border-style:none; border-radius: 50px;background-color:transparent;"  name="button" onclick="myFunction()"> <p><b><%=music[9].title%> - <%=music[9].content%></b><big><big><i class='bx bxs-heart' style='color:#ff2c2c'></i></big></big></p></button>
+               </form>
+                <audio id="audio9" src="<%=music[9].video%>" ></audio>
+                <button class="btn" id="btn1"  onclick="play9()">►</button> 
+                 
+                </div>
+           
+              <div class="column2" style="width: 300px;"> <img src="/img/<%=music[10].img%>"  style="height:270px" value="PLAY"  ><form action="/saved/<%=music[10]._id%>" method="post">
+                <button type="submit"  style=" border-style:none; border-radius: 50px;background-color:transparent;"  name="button" onclick="myFunction()"> <p><b><%=music[10].title%> - <%=music[10].content%></b><big><big><i class='bx bxs-heart' style='color:#ff2c2c'></i></big></big></p></button>
+               </form>
+                <audio id="audio10" src="<%=music[10].video%>" ></audio>
+                <button class="btn" id="btn1"  onclick="play10()">►</button> 
+                  
+              </div>
+            
+              <div class="column2" style="width: 300px;"> <img src="/img/<%=music[11].img%>"  style="height:270px" value="PLAY"  ><form action="/saved/<%=music[11]._id%>" method="post">
+                <button type="submit"  style=" border-style:none; border-radius: 50px;background-color:transparent;"  name="button" onclick="myFunction()"> <p><b><%=music[11].title%> - <%=music[11].content%></b><big><big><i class='bx bxs-heart' style='color:#ff2c2c'></i></big></big></p></button>
+               </form>
+                <audio id="audio11" src="<%=music[11].video%>" ></audio>
+                <button class="btn" id="btn1"  onclick="play11()">►</button> 
+                
+            </div>
+             </div>
+             <div class="solid"></div>
+             <div class="footer-basic" style="margin-left: 15%;">
+          
+              <div class="social"><a href="https://www.instagram.com/"><i class="icon ion-social-instagram"></i></a><a href="https://ru.linkedin.com/"><i class="icon ion-social-linkedin"></i></a><a href="https://twitter.com"><i class="icon ion-social-twitter"></i></a><a href="https://ru-ru.facebook.com/"><i class="icon ion-social-facebook"></i></a></div>
+              <ul class="list-inline">
+                  <li class="list-inline-item"><a href="#">Services</a></li>
+                  <li class="list-inline-item"><a href="#">About</a></li>
+                  <li class="list-inline-item"><a href="#">Terms</a></li>
+                  <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+              </ul>
+              <p class="copyright">Shanyraq © 2022</p>
+          
+      </div>
+    </main>
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+
+<script src="js/sweetAlert2.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+<script src="js/theme.js" ></script>
+<script src="js/myscript.js" ></script>
+
+</body>
+<footer></footer>

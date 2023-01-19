@@ -1,0 +1,56 @@
+<%- include("header") %>
+        </div> 
+      <main>
+        <div id="container" style="margin-left: 18.5%;">
+          <%for(var i = 0; i < films.length ; i++){%>
+          <div class="box" style="height: auto;">
+            <p class="movies" style="font-size:medium"><%=films[i].title%>(<%=films[i].year%>)</p>
+            <a href="/watch/<%=films[i]._id%>">
+            <img src="<%=films[i].img%>" class="model"></a>
+            <div class="details">
+              <button class="watch"><a href="/watch/<%=films[i]._id%>">Watch now</a></button>
+            </div>
+          </div>
+          <%}%>
+</div>
+<div class="solid"></div>
+<div class="footer-basic" style="margin-left: 15%;">
+          
+  <div class="social"><a href="https://www.instagram.com/"><i class="icon ion-social-instagram"></i></a><a href="https://ru.linkedin.com/"><i class="icon ion-social-linkedin"></i></a><a href="https://twitter.com"><i class="icon ion-social-twitter"></i></a><a href="https://ru-ru.facebook.com/"><i class="icon ion-social-facebook"></i></a></div>
+      <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Services</a></li>
+          <li class="list-inline-item"><a href="#">About</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+      </ul>
+  <p class="copyright">Shanyraq © 2022</p>
+
+</div></main>
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+    <script src="js/myscript.js" charset="utf-8" ></script>
+    <script src="js/theme.js" charset="utf-8" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+
+</body>
